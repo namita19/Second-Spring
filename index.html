@@ -77,6 +77,14 @@
             font-weight: 600;
             color: #1a1a1a;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
         }
 
         .nav-menu {
@@ -526,9 +534,124 @@
         }
 
         .impact-item p {
-            color: #cccccc;
+            color: rgba(255, 255, 255, 0.9);
             line-height: 1.6;
             font-weight: 300;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: #666666;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: #fafafa;
+            border-radius: 10px;
+            border-left: 4px solid #68b088;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #1a1a1a;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #68b088;
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #1a1a1a;
+        }
+
+        .contact-form {
+            background: #fafafa;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(26, 26, 26, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            color: #1a1a1a;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-family: 'Newsletter Display', Georgia, serif;
+            font-weight: 300;
+            color: #1a1a1a;
+            background: white;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #68b088;
+            box-shadow: 0 0 0 3px rgba(104, 176, 136, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            background: #68b088;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Newsletter Display', Georgia, serif;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .form-submit:hover {
+            background: #5a9d78;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(104, 176, 136, 0.3);
         }
 
         /* CTA Section */
@@ -637,6 +760,11 @@
                 gap: 2rem;
             }
 
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
             .hero-buttons {
                 justify-content: center;
             }
@@ -679,7 +807,10 @@
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
-            <a href="#" class="logo">Second Spring</a>
+            <a href="https://namitamankad.myflodesk.com/monthly" class="logo">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjNzU2MTg2Ii8+CjxwYXRoIGQ9Ik0yMDAgMzIwQzI0MCAzMjAgMjgwIDMwMCAzMDAgMjYwQzMxMCAyNDAgMzEwIDIyMCAzMDAgMjAwTDI2MCAyMDBDMjQwIDIwMCAyMjAgMjAwIDIwMCAyMDBDMTgwIDIwMCAxNjAgMjAwIDE0MCAyMDBMMTAwIDIwMEM5MCAyMjAgOTAgMjQwIDEwMCAyNjBDMTIwIDMwMCAxNjAgMzIwIDIwMCAzMjBaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiLz4KPHA+CjxwYXRoIGQ9Ik0yMDAgMTgwQzIyMCAxODAgMjQwIDE3MCAyNTAgMTUwQzI2MCAxMzAgMjYwIDExMCAyNTAgOTBMMjIwIDkwQzIxMCA5MCAyMDAgOTAgMTkwIDkwQzE4MCA5MCAxNzAgOTAgMTYwIDkwTDEzMCA5MEMxMjAgMTEwIDEyMCAxMzAgMTMwIDE1MEMxNDAgMTcwIDE2MCAxODAgMjAwIDE4MFoiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0ibm9uZSIvPgo8L3A+Cjx0ZXh0IHg9IjIwMCIgeT0iMzYwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmb250LXdlaWdodD0iYm9sZCI+U0VDT05EIFNQSU5HPC90ZXh0Pgo8L3N2Zz4=" alt="Second Spring Logo">
+                Second Spring
+            </a>
             <nav>
                 <ul class="nav-menu">
                     <li><a href="#features">Features</a></li>
@@ -689,7 +820,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#cta" class="cta-button">Get Early Access</a>
+            <a href="https://namitamankad.myflodesk.com/monthly" class="cta-button">Get Early Access</a>
         </div>
     </header>
 
@@ -700,7 +831,7 @@
                 <h1>Embrace Your Second Spring</h1>
                 <p>Navigate perimenopause with confidence through personalized wellness that blends ancient wisdom with modern science. Transform this transition into your most empowering chapter yet.</p>
                 <div class="hero-buttons">
-                    <a href="#cta" class="btn-primary">Start Your Journey</a>
+                    <a href="https://namitamankad.myflodesk.com/monthly" class="btn-primary">Start Your Journey</a>
                     <a href="#features" class="btn-secondary">Learn More</a>
                 </div>
             </div>
@@ -914,12 +1045,53 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to transform your perimenopause journey? We're here to help you embrace your Second Spring.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Whether you're interested in early access, partnerships, or have questions about Second Spring, we'd love to hear from you.</p>
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <a href="mailto:secondspring@namitamankad.com">secondspring@namitamankad.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Early Access:</strong>
+                        <a href="https://namitamankad.myflodesk.com/monthly">Join our newsletter</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="mailto:secondspring@namitamankad.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section id="cta" class="cta-section">
         <div class="container">
             <h2>Ready to Embrace Your Second Spring?</h2>
             <p>Join thousands of women transforming their perimenopause journey from struggle to strength.</p>
-            <a href="#" class="btn-white">Get Early Access</a>
+            <a href="https://namitamankad.myflodesk.com/monthly" class="btn-white">Get Early Access</a>
         </div>
     </section>
 
@@ -950,8 +1122,8 @@
                     <h3>Connect</h3>
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
-                    <a href="#">Newsletter</a>
-                    <a href="mailto:hello@secondspring.com">hello@secondspring.com</a>
+                    <a href="https://namitamankad.myflodesk.com/monthly">Newsletter</a>
+                    <a href="mailto:secondspring@namitamankad.com">secondspring@namitamankad.com</a>
                 </div>
             </div>
             <div class="footer-bottom">
